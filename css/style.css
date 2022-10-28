@@ -1,0 +1,222 @@
+:root {
+    --blanco: #fff;
+    --negro: #000;
+    --gris: #757575;
+    --azul: #0A3871;
+    --azulClaro: #DFE9F3;
+    --fuentePrincipal: 'Abel', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: linear-gradient(to top, #DFE9F3 100%, var(--blanco) 100% );
+    margin: 0%;
+    font-family: var(--fuentePrincipal);
+}
+
+.header {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 2rem;
+    /* line-height: 80px; */
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 2rem;
+    box-shadow: 0px 1px 0px 0px rgb(49 110 172);
+    transform: scale(1.1);
+    
+}
+
+
+h1 {
+    font-family: var(--fuentePrincipal);
+    font-size: 3em;
+}
+
+ul li a:hover {
+    box-shadow: inset 300px 0 0 0 var(--azulClaro);
+}
+
+/* Contenedor 1 */
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.colmunas {
+    display: grid;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.texto-encriptador {
+    text-align: center;
+    margin-top: 1rem;
+    height: 50rem;
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+}
+
+.input-texto {
+    width: 90%;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 14px;
+    resize: none;
+}
+
+/* Botones */
+.buttom {
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    padding-right: 1rem;
+}
+
+.btn-1 {
+    border-radius: 1rem;
+    color: var(--negro);
+    font-size: 3rem;
+    box-shadow: inset 0 0 0 0 var(--azul);
+    transition: ease-out 0.3s;
+    outline: none;
+    padding-right: 3rem;
+    margin-right: 1rem;
+    cursor: pointer;
+
+}
+
+.btn-1:hover {
+    box-shadow: inset 300px 0 0 0 var(--azulClaro);
+}
+
+.btn-2 {
+    border-radius: 1rem;
+    color: var(--negro);
+    font-size: 3rem;
+    box-shadow: inset 0 0 0 0 var(--azul);
+    transition: ease-out 0.3s;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.btn-2:hover {
+    box-shadow: inset 300px 0 0 0 var(--azulClaro);
+}
+
+/* Contenedor 2 */
+
+.texto-resultado {
+    text-align: center;
+    margin-top: 1rem;
+    height: 50rem;
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+    
+}
+
+.mensaje {
+    width: 90%;
+    text-align: center;
+    background-image: url('/img/Munheco.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    line-height: 36px;
+    border-radius: 14px;
+    resize: none;
+}
+
+/* Botones */
+
+.buttom2 {
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+}
+
+.btn-3 {
+    border-radius: 1rem;
+    color: var(--negro);
+    font-size: 3rem;
+    box-shadow: inset 0 0 0 0 var(--azul);
+    transition: ease-out 0.3s;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.btn-3:hover {
+    box-shadow: inset 300px 0 0 0 var(--azulClaro);
+}
+
+
+.sombra {
+    -webkit-box-shadow: -1px 6px 10px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: -1px 6px 10px 0px rgba(0,0,0,0.7);
+    box-shadow: -1px 6px 10px 0px rgba(0,0,0,0.7);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer__texto {
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+/* Grid and Media */
+
+@media (min-width: 768px) and (min-width: 1200px) {
+    .dos-colmunas {
+        display: grid;
+        grid-template-columns: 60% 30%;
+        column-gap: 10rem;
+        margin-bottom: 1rem;
+        height: 72rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        
+    }
+}
